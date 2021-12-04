@@ -81,9 +81,6 @@ class App extends Component {
 				discount: this.state.cart.subTotal * (parseInt(e.target.value) / 100),
 				totalPrice: this.state.cart.subTotal - this.state.cart.subTotal * (parseInt(e.target.value) / 100)
 			}
-		}, function() {
-
-			console.log(this.state.cart)
 		})
 	}
 
